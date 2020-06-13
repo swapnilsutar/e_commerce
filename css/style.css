@@ -59,6 +59,7 @@
 	background-color: rgb(152, 150, 148);
    /* background:#98ff00;  */
 	z-index: 999999;
+	position:fixed;
 
 }
 .lds-facebook {
