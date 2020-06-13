@@ -14,8 +14,16 @@
 	
 	</style>
   </head>
-  <body>
- <!--   <h1> TUSHAR MASALE </h1>    -->
+</head>
+<body onload="main()"> 
+
+   
+  <div id="loader">
+	  <p style="font-size:30px;font-weight: 700;top: 40%;left: 44%;position: fixed;color: white;" align="center">Loading...</p>
+	  <div class="lds-facebook">
+		  <div></div><div></div><div></div>
+	  </div>
+  </div>
 	
  <nav class="navbar navbar-expand-lg">
 	<div class="container">
@@ -309,6 +317,13 @@
 	
 	
 	
+		<script>
+			function main(){
+				document.getElementById("loader").style.display="none";
+				
+			}
+	
+		</script>
 			   <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	

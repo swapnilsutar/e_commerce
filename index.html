@@ -12,9 +12,15 @@
     <title>Tushar Masale</title>
 
   </head>
-  <body>
- <!--   <h1> TUSHAR MASALE </h1>    -->
+  <body onload="main()"> 
+ 
 	 
+	<div id="loader">
+		<p style="font-size:30px;font-weight: 700;top: 40%;left: 44%;position: fixed;color: white;" align="center">Loading...</p>
+		<div class="lds-facebook">
+			<div></div><div></div><div></div>
+		</div>
+	</div>
 		
 	<nav class="navbar navbar-expand-lg">
 			<div class="container">
@@ -242,12 +248,16 @@
 		</div>		
 	</div>
 
-	<script>
-		alert("Hi... \nThis website is only design of some web pages.");
-	</script>
    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	
+	<script>
+		function main(){
+			document.getElementById("loader").style.display="none";
+			alert("Hi... \nThis website is only design of some web pages.");
+		}
+
+	</script>
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
