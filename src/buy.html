@@ -6,127 +6,316 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 	<link rel="stylesheet" href="../css/style.css">
-    <title>TUSHAR SPICES</title>
+	<link rel="icon" href="../images/logo.png" type="images/x-icon" >
+
+    <title>Buy Products</title>
   </head>
   <body>
   
   
-  <div class="">
-	<nav class="navbar navbar-expand-lg" >
-
-			<div class="container">
-					
+	<nav class="navbar navbar-expand-lg">
+		<div class="container">
+				<a href=# class="nav-link"> 
+					<img src="../images/logo.png" height=90 width=195 >	
+				</a>
+				<button class="navbar-toggler" data-toggle="collapse" data-target="#collapsenav" airal-controls="collapsenav" arial-expanded="false" arial-label="toggle navigation">&#9776;</button>
+	
+			
+			<div class="collapse navbar-collapse" id="collapsenav">
+		<ul class="navbar-nav mr-auto">
+				<li class="nav-item dropdown">
+					<a href="../index.html" class="nav-link ff" style="color: black"> HOME </a>			
+				</li>
+				<li class="nav-item dropdown">				
+					<a href="history.html" class="nav-link ff" style="color: black"> ABOUT US </a>
+		
+				</li>		
+				<li class="nav-item dropdown">
+							<a href=# class="nav-link dropdown-toggle ff" style="color: black" data-toggle="dropdown" > PRODUCT </a>
+				<div class="dropdown-menu dropdown-content">
+					<a href="groundspices.html" class="dropdown-item"> Ground Spices</a>
+					<a href="blendspices.html" class="dropdown-item"> Blend Spices</a>
+				<!-- <a href="src/spices.html" class="dropdown-item">  Spices</a> -->
+					<a href="dryfruits.html" class="dropdown-item"> Dry Fruits</a>
+								
+				</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a href="buy.html" class="nav-link ff" style="color: black"> BUY </a></li>
+				<li class="nav-item dropdown">
+					<a href="contact.html" class="nav-link ff" style="color: black"> CONTACT </a>
+				</li>
+			
+		</ul>	
+			<button class="btn btn-warning" type="button" data-target="#login" data-toggle="modal">
+			Login
+			</button> &nbsp;
+			
+			<button class="btn btn-warning" type="button" data-toggle="modal" data-target="#reg"> 
+			Register
+			</button>
+		
+		</div>	
+		</div>
+	</nav>
+	
+	
+	
+		<!-- USER LOGIN -->
+	<div class="modal" id="login">
+	<div class="modal-dialog">
+	<div class="modal-content">
+		<div align="center">
+			<h3> WELCOME 
+	<button  type="button" class="close" data-dismiss="modal">&times;</button>
+			</H3>
+			<img src="../images/logo.png" height="100" width="200">
+		</div>
+		<div class="container">
+			<form method="post" action="../user_log.php">
+				<label> Username or Email </label>
+				<input class="form-control" type="email" name="username">
+				<label> Password </label>
+				<input class="form-control" type="password" name="password">
+				<br>
+				<div align="center">
+				<button type="submit" class="btn btn-success btn-block" align="center">Log in</button>
+				</div>
+				<br>
+			</form>
+		</div>
+	</div>
+	</div>
+	</div>
+	
+	
+	<!-- Registrartion Form -->
+	<div class="modal" id="reg">
+	<div class="modal-dialog" >
+	<div class="modal-content ">
+		<div class="form-group">
+			<div align="center">
+				<h2> Registration Here ! 
+				<button  type="button" class="close" data-dismiss="modal">&times;</button>
+				</h2>
 					<a href=# class="nav-link"> 
 						<img src="../images/logo.png" height=90 width=195 >	
 					</a>
-				<button class="navbar-toggler" data-toggle="collapse" data-target="#collapsenav" airal-	s="collapsenav" arial-expanded="false" arial-label="toggle navigation"> Collapse
-				</button>
-				
-				<div class="collapse navbar-collapse" id="collapsenav">
-			<ul class="nav mr-auto">
-					<li class="nav-item dropdown">
-						<a href="../index.html" class="nav-link ff" style="color: black"> HOME </a>			
-					</li>
-					<li class="nav-item dropdown">				
-						<a href=# class="nav-link dropdown-toggle ff" style="color: black" data-toggle="dropdown"> ABOUT US </a>
-					<div class="dropdown-menu dropdown-content">
-						<a href=# class="dropdown-item"> Award </a>
-						<a href=# class="dropdown-item"> History </a>
-					</div>
-					</li>		
-					<li class="nav-item dropdown">
-								<a href=# class="nav-link dropdown-toggle ff" style="color: black" data-toggle="dropdown" > PRODUCT </a>
-					<div class="dropdown-menu dropdown-content">
-						<a href="groundspices.html" class="dropdown-item"> Ground Spices</a>
-						<a href="blendspices.html" class="dropdown-item"> Blend Spices</a>
-						<!-- <a href="spices.html" class="dropdown-item">  Spices</a> -->
-						<a href="dryfruits.html" class="dropdown-item"> Dry Fruits</a>
-					
-					</div>
-					</li>
-					<li class="nav-item dropdown">
-						<a href="buy.html" class="nav-link ff" style="color: black"> BUY </a></li>
-					<li class="nav-item dropdown">
-						<a href="contact.html" class="nav-link ff " style="color: black"> CONTACT </a>
-					</li>
-				
-					
-			</ul>	
-				<button class="btn btn-warning nav-item dropdown" type="button">
-				LogIn
-				</button> &nbsp;
-				<button class="btn btn-warning nav-item dropdown" type="button" data-target="#reg" data-toggle="modal" >
-				Register
-				</button>
-			
-			</div>	
 			</div>
-		</nav>
+			<div class="container">
+			<form method="post" action="../usr_reg.php">
+			<label> Full Name </label>
+			<input class="form-control" type="text" name="name" />
+			<label> Email </label>
+			<input class="form-control" type="email" name="username" required/>
+			<label> Mobile No. </label>
+			<input class="form-control" type="text" name="mobile" required/>
+			<label> set Password </label>
+			<input class="form-control" type="password" name="pass1" /> 
+			<label> confirm Password </label>
+			<input class="form-control" type="password" name="pass2" /> 
+			<br>
+			<div align="right">
+			<button type="submit" class="btn btn-success">Register </button>
+			</div>
+			</form>
 		</div>
-		
-	<br>
-	<br>
+		</div>
+	</div>
+	</div>
+	</div>
 	
+	
+	
+	</br>
+<!-- Products -->
 	<div class="container">
 
 	<p class="alert alert-danger">
 		! Login  in neccessary to Buy Our Product 
 	</p>
 	<p>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=#  >Click Here </a> to Login
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=#  data-target="#login" data-toggle="modal"  >Click Here </a> to Login
 	</p>
-<br>
-		<h3></h3>
+	<br>
+	<div class="container price_tag">
+	<br>
+		<h3>GROUND SPICES </h3>
+		<div class="row">
+		<div class="col-lg-4">
 		<label>
-			<input type="checkbox"/>
+			<!-- <input type="checkbox"/> -->
 			<img src="../images/g1.jpg" height="100" width="100	">
-		</label><br><br>
+				SPECIAL JAWARI MIRACHI POWDER </img>
+				<h6>&#8377; 200/Kg</h6>
+		</label>
+		
+		</div>
+		<div class="col-lg-4">
 		<label>
-			<input type="checkbox"/>
+			<!-- <input type="checkbox"/> -->
 			<img src="../images/g2.jpg" height="100" width="100	">
-		</label><br><br>
+			ASSAL KOLHAPURI MASALA</img><h6>&#8377; 120/Kg</h6>
+		</label>
+		</div>
+		<div class="col-lg-4">
 		<label>
-			<input type="checkbox"/>
+			<!-- <input type="checkbox"/> -->
 			<img src="../images/g3.jpg" height="100" width="100	">
-		</label><br><br>
+			KASHMIRI MIRCHI POWDER </img>
+			<h6>&#8377; 180/Kg</h6>
+		</label>
+		</div>
+		</div>
+		<h3>BLEND SPICES </h3>
+	<div class="row">
+	<div class="col-lg-4" ">
+
 		<label>
-			<input type="checkbox"/>
-			<img src="../images/b11.jpg" height="100" width="100	">
-		</label><br><br>
+			<!-- <input type="checkbox"/> -->
+			<img src="../images/b11.jpg" height="100" width="100">
+			Kala Matan/ Savaji Masala</img>
+			<h6>&#8377; 300/Kg</h6>
+		</label>
 		<label>
-			<input type="checkbox"/>
+			<!-- <input type="checkbox"/> -->
 			<img src="../images/b2.jpg" height="100" width="100	">
-		</label><br><br>
+			Kolhapuri Pandhara Rassa </img>
+			<h6>&#8377; 500/Kg</h6>
+		</label>
+		
 		<label>
-			<input type="checkbox"/>
+			<!-- <input type="checkbox"/> -->
 			<img src="../images/b3.jpg" height="100" width="100	">
-		</label><br><br>
+			Kolhapuri Tamabada Rassa</img>
+		<h6>&#8377; 500/Kg</h6>
+	</label>
+			<label>
+			<!-- <input type="checkbox"/> -->
+			<img src="../images/b10.jpg" height="100" width="100	">
+			 Pav Bhaji Masala</img>
+		<h6>&#8377; 500/Kg</h6>
+		</label>
+		
+	</div>
+	
+	
+	<div class="col-lg-4">
 		<label>
-			<input type="checkbox"/>
+			<!-- <input type="checkbox"/> -->
 			<img src="../images/b4.jpg" height="100" width="100	">
-		</label><br><br>
+			Akhaa Masur</img>
+			<h6>&#8377; 320/Kg</h6>
+		</label>
 		<label>
-			<input type="checkbox"/>
+			<!-- <input type="checkbox"/> -->
 			<img src="../images/b5.jpg" height="100" width="100	">
-		</label><br>	<br>	
+			Kolhapuri Matan Fry Masala</img>
+			<h6>&#8377; 400/Kg</h6>
+		</label>
 		<label>
-			<input type="checkbox"/>
+			<!-- <input type="checkbox"/> -->
 			<img src="../images/b6.jpg" height="100" width="100	">
-		</label><br><br>
+			Andakari Masala</img>
+<h6>&#8377; 450/Kg</h6>	
+	</label>
+			<label>
+			<!-- <input type="checkbox"/> -->
+			<img src="../images/b9.jpg" height="100" width="100	">
+			 Panir Tikka Masala</img>
+			 <h6>&#8377; 500/Kg</h6>
+		</label>
+
+	</div>	
+	
+	<div class="col-lg-4">
 		<label>
-			<input type="checkbox"/>
+			<!-- <input type="checkbox"/> -->
 			<img src="../images/b7.jpg" height="100" width="100	">
-		</label><br>	<br>
+			 Sambar Masala</img>
+			<h6>&#8377; 340/Kg</h6>
+			 </label>
 		<label>
-			<input type="checkbox"/>
+			<!-- <input type="checkbox"/> -->
 			<img src="../images/b8.jpg" height="100" width="100	">
-		</label><br>		<br>
+			 Dam Birayani Masala</img>
+			 <h6>&#8377; 280/Kg</h6>
+		</label>
+		<label>
+			<!-- <input type="checkbox"/> -->
+			<img src="../images/b11.jpg" height="100" width="100	">
+			 Chicken 65 masala</img>
+			 <h6>&#8377; 510/Kg</h6>
+		</label>
+		
+	</div>
+	</div>
+	</div>
 		
 		
+	<button type="submit" class="btn btn-primary btn-block" onclick="ab();"> Buy Now</button>
+		<script type="text/javascript"> 
+			function ab(){
+		alert("Please Login First to buy Our Product");
+		}
+		</script>
 		
 	</div>	
+
+	<br>
+	<br>
+	<br>
 		
-		
+	<div class="container-fluid bottom_nav">			<!-- Bottom Navigation Bar -->
+
+		<div class="row">
+			
+			<div class="col-lg-2 text-warning" style="margin:25px 50px;">
+				<ul class="nav flex-column" >
+					<li class="nav-item"> 
+						<a class="nav-link" href="../index.html" style="color: white"> Home	</a>	</li>
+					<li class="nav-item">
+						<a class="nav-link" href="history.html" style="color: white">  About Us </a>	</li>
+					<li class="nav-item"> 
+						<a class="nav-link" href="contact.html" style="color: white">  Contact</a>	</li>
+					<li class="nav-item"> 
+						<a class="nav-link" href="#" style="color: white">  Dealers</a> 	</li>			
+				</ul>
+				<br>
+				<br>
+			</div>
+			<div class="col-lg-2" style="color: white"> 
+				
+					<br>
+				<b style="font-size:18px">	Address :</b><br>
+						&nbsp;&nbsp;&nbsp;1689 C Ward ,<br>
+						&nbsp;&nbsp;&nbsp;Bindu Chowk , <br>
+						&nbsp;&nbsp;&nbsp;Kolhapur <br><br>
+
+				</div>
+			<div class="col-lg-2" style="color: white;" style="margin:60px 50px;">
+			
+				<br>
+				<b> 
+				Follow Us
+				</b>
+				<br>
+	
+				<img src="../images/facebook.png" height="30" width="30"> 			
+				<img src="../images/whatsapp.png" height="30" width="30" > 
+				
+			</div>
+			<div class="col-lg-5">
+			<br> 
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.4132870539866!2d74.19582151531364!3d16.855438088399538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc1a80a7c8a6b7b%3A0x2a6e33b9af5d4171!2sTatyasaheb+Kore+Institute+of+Engineering+%26+Technology!5e0!3m2!1sen!2sin!4v1552033371182" width="100%" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe>
+					
+			</div>
+		</div>		
+	</div>
+	
+	<script>
+		alert("Hi... \nThis website is only design of some web pages.");
+	</script>
 		
 		  <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
