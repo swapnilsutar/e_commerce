@@ -1,0 +1,45 @@
+.navbar{
+	background:	#DAA520;
+	border-radius:0px;
+
+}
+
+.dropdown-content{
+		top:35px;
+}
+
+.nav-item:hover{
+	border-bottom:1px solid black;	
+
+}
+.nav{
+
+}	
+
+
+.ff{
+	font-family:cursive;
+
+}
+
+.bottom_nav{
+	height:auto;
+	background-color:rgb(42, 42, 42);
+	
+}
+
+/* .modal { */
+	
+	/* top:300px; */
+	/* left:300px; */
+	/* width:700px; */
+	/* height:	600px */
+	
+/* } */
+
+/* .modal-content{ */
+	
+/* //	background-color:green; */
+	
+	
+/* } */
