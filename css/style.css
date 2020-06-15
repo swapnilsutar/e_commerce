@@ -18,7 +18,7 @@
 .bottom_nav{
 	height:auto;
 	background-color:rgb(42, 42, 42);
-	padding-bottom: 50PX;
+	
 }
 .pro{
 	height: auto;
@@ -100,4 +100,17 @@
 	  height: 32px;
 	}
   }
-  
+.copyright i{
+    color: grey;
+    /*padding-top: 50px;*/
+}
+.copyright {
+    padding-bottom: 40px;
+    font-family: initial;
+    font-size: 18px;
+    font-style: italic;
+}
+.copyright a{
+    color: white;
+    text-decoration: none;    
+}
